@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  background-image: url(/img/bg.jpg);
+  background-image: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.9);
+}
+.navbar-brand img {
+  height: 2rem;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  color: white;
+}
+
+.caption h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  font-size: 1.1rem;
+  padding: .6rem 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .caption h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.3rem;
+  }
+  
+  .caption h3 {
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    font-size: 1rem;
+    padding: .5rem 1.6rem;
+  }
+}
+/*============= About SECTION =============*/
+
+.about-section {
+  display:flex;
+  align-items:center;
+  color:#fff;
+}
+
+.about-section h1
+{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #FFD700;
+}
+
+.about-section p
+{
+  text-align: center;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+}
+
+
+/* start testimonials */
+
+#client-testimonial-carousel {min-height: 250px; margin-bottom: -50px;}
+
+.testimonials-header {
+  text-align: center;
+  color: #FFD700;
+  font-family: 'Lato', sans-serif;
+}
+
+/* end testimonials */
+
+/*footer */
+
+.container-fluid{
+  overflow:hidden; 
+  background:transparent;
+  color: #e6e8ea  !important;
+}
+
+.footer-header {
+  text-align: center;
+  color: #FFD700;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 30px;
+}
+
+small{
+  font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.bold-text{
+  color: #ffffff !important;
+}
+
+
+.mt-55{
+  margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+
+h3{
+  font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.social{
+  font-size: 21px !important; 
+}
+
+.rights{
+  font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+.row a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #e6e8ea;
+}
+
+.row a:hover
+{
+  color: #FFD700;
+}
+
+/* end footer */
+
+/* COPYRIGHT */
+
+.copyright-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
