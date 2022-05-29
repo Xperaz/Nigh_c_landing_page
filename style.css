@@ -99,86 +99,25 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
-/* end testimonials */
-
-/*footer */
-
-.container-fluid{
-  overflow:hidden; 
-  background:transparent;
-  color: #e6e8ea  !important;
-}
-
-.footer-header {
-  text-align: center;
-  color: #FFD700;
-  font-family: 'Lato', sans-serif;
-  margin-bottom: 30px;
-}
-
-small{
-  font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
-
-.bold-text{
-  color: #ffffff !important;
-}
-
-
-.mt-55{
-  margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
-
-
-h3{
-  font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
-
-.social{
-  font-size: 21px !important; 
-}
-
-.rights{
-  font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
-
-.row a{
-  text-decoration: none;
-  list-style-type: none;
-  color: #e6e8ea;
-}
-
-.row a:hover
+.client-review-stars 
 {
   color: #FFD700;
 }
 
-/* end footer */
+/* end testimonials */
 
-/* COPYRIGHT */
-
-.copyright-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*start contact info */
+.info-section {
+  margin-bottom: 50px;
 }
 
+.list-group-item {
+  background-color: transparent;
+  border-top: 1px solid #FFD700;
+  border-radius: 0;
+  color: #fff;
+  }
 
-/*============ BOOTSTRAP BREAK POINTS:
+  
 
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-=============*/
+/* End contact info */
