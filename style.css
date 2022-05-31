@@ -90,20 +90,21 @@ body{
 
 
 /* start testimonials */
+#client-testimonial-carousel {
+  min-height: 260px;
+}
 
-#client-testimonial-carousel {min-height: 250px; margin-bottom: -50px;}
+.client-review-stars {
+  color: #FFD700;
+}
+
+.blockquote-footer {
+  margin-top: 20px;
+}
 
 .testimonials-header {
-  text-align: center;
-  color: #FFD700;
-  font-family: 'Lato', sans-serif;
-}
-
-.client-review-stars 
-{
   color: #FFD700;
 }
-
 /* end testimonials */
 
 /*start contact info */
@@ -119,3 +120,16 @@ body{
   }
 
 /* End contact info */
+
+footer {
+  margin-top: -70px;
+}
+
+a:hover {
+  background-color: #FFD700 !important;
+  outline: #FFD700 !important;
+}
+
+/* footer */
+
+
