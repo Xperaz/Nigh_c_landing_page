@@ -107,6 +107,61 @@ body{
 }
 /* end testimonials */
 
+/* start F&Qs */
+
+.faq-container {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.faq-container h1 {
+  color: #FFD700;
+  position: relative;
+  width: 40rem;
+  margin-bottom: 50px;
+}
+
+.faq-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 28px;
+  width: 115px;
+  height: 2px;
+  background-color: #FFD700;
+}
+
+.faq-accordion {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #FFD700;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.faq-accordion .icon{
+  margin: 0 10px 0 0;
+  width: 50px;
+  height: 50px;
+  background: url(/img/add.png);
+  float: left;
+  transition: all .5s ease-in;
+}
+
+.faq-accordion h5 {
+  font-size: 22px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #d2c36e;
+}
+
+/* END F&Qs */
+
 /*start contact info */
 .info-section {
   margin-bottom: 50px;
