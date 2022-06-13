@@ -2,7 +2,6 @@
 
 *{
   margin: 0px;
-  padding: 0px;
 }
 
 body{
@@ -10,84 +9,42 @@ body{
   font-family: 'Lato', sans-serif;
   color: #fff;
   background-color: #181818;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; ;
-}
+} 
 
 .navbar {
   background: rgba(0, 0, 0, 0.9);
-} 
+}
+
 .navbar-brand img {
-  height: 3rem;
+  height: 2rem;
 }
 
-.full-screen-video-container
-{
-  z-index: -1;
+.jumbotron {
+  height: 60vh;
   position: relative;
-  height: 100vh;
-  width: 100vw;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.2);
-  display: flex;
+  background-color:black;
 }
-
-.full-screen-video-container video {
+.jumbotron video {
   position: absolute;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 0;
+  width:100%;
+  height:60vh;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity:0.5;
 }
-/* .video-background {
+.jumbotron .container {
+  z-index: 2;
   position: relative;
-  width: 100%;
-  min-height: 100vh;
 }
 
-/* .caption {
-  position: absolute;
-  top: 30%;
-  width: 100%;
-  color: white;
-}
-
-.caption h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  padding-bottom: 0.1rem;
-}
-
-.caption h3 {
-  font-size: 2rem;
-  padding-bottom: 1.6rem;
-}
-
-.btn-lg {
-  border-width: medium;
-  font-size: 1.1rem;
-  padding: .6rem 1.6rem;
-} */ */
-
-@media (max-width: 768px) {
-  .caption h1 {
-    font-size: 1.1rem;
-    letter-spacing: 0.2rem;
-    padding-bottom: 0.3rem;
-  }
-  
-  .caption h3 {
-    font-size: 1.1rem;
-    padding-bottom: 1.2rem;
-  }
-  .btn-lg {
-    font-size: 1rem;
-    padding: .5rem 1.6rem;
+@media only screen and (max-width: 720px) {
+  .jumbotron video {
+    width: 100%;
+    object-fit: cover;
+    opacity:0.5;
   }
 }
 /*============= About SECTION =============*/
