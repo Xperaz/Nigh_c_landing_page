@@ -18,7 +18,7 @@
 		<a class = "navbar-brand mx-auto" href="#"><img src="img/logo.png" alt=""></a>
 	</nav>
 
-	<div class="video-background">
+	<!-- <div class="video-background">
 		<div class="video-wrap">
 			<div id="video">
 				<video id="bgvid" autoplay loop muted>
@@ -26,13 +26,21 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="caption text-center">
+  <!-- Start background Video Section -->
+
+  <div class="full-screen-video-container">
+    <video autoplay loop muted src="stars.mp4"></video>
+  </div>
+
+  <!-- End background Video Section -->
+
+	<!-- <div class="caption text-center">
 		<h1>SIMBA NIGHT CLUB</h1>
 		<h3>SO MUCH OF FUN AND MUSIC</h3>
 		<a class="btn btn-outline-light btn-lg" href="#">BOOK NOW</a>
-	</div>
+	</div> -->
 
 <!--- Start About Section -->
 <section class="about-section">
@@ -111,32 +119,42 @@
 
 <!--- Start FA&Q Section -->
 
-<div class="faq-container">
-  <h1>Frequently Asked Questions(FAQs)</h2>
-  <div class="faq-accordion">
-    <div class="icon"></div>
-    <h5>1# First Question?</h5>
-  </div>
-  <div class="faq-panel">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates qui consectetur facere corrupti aliquid laudantium! Laudantium perferendis ipsam quia.</p>
-  </div>
+<section class="FAQ'S">
+  <h1 class="faq-heading">FAQ'S</h1>
+  <div class="questions-container">
+    <div class="question">
+        <button>
+          <span>What's the best way to study JavaScript?</span>
+          <i class="fa fa-chevron-down d-arrow"></i>
+        </button>
+        <p>Start With An Online Course.An online tutorial is probably the best way to learn JavaScript.If you're serious about learning fast, efficiently and without missing any important information, then you should consider enrolling in an online course.</p>
+    </div>
 
-  <div class="faq-accordion">
-    <div class="icon"></div>
-    <h5>2# second Question?</h5>
-  </div>
-  <div class="faq-panel">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates qui consectetur facere corrupti aliquid laudantium! Laudantium perferendis ipsam quia.</p>
-  </div>
+    <div class="question">
+        <button>
+            <span>What should I learn after JavaScript / js?</span>
+            <i class="fa fa-chevron-down d-arrow"></i>
+        </button>
+        <p>I suggest taking a look at Typescript and learning some popular frontend framework (Angular, React, Vue). If you are interested in backend, take a look at Node. js.</p>
+    </div>
 
-  <div class="faq-accordion">
-    <div class="icon"></div>
-    <h5>3# Third Question?</h5>
-  </div>
-  <div class="faq-panel">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates qui consectetur facere corrupti aliquid laudantium! Laudantium perferendis ipsam quia.</p>
-  </div>
+    <div class="question">
+        <button>
+            <span>Can I get a job after learning JavaScript?</span>
+            <i class="fa fa-chevron-down d-arrow"></i>
+        </button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laboriosam ea odit voluptate culpa quas explicabo.</p>
+    </div>
+
+    <div class="question">
+        <button>
+            <span>How long will it take to learn JavaScript?</span>
+            <i class="fa fa-chevron-down d-arrow"></i>
+        </button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corporis pariatur a maiores minus tempore magni nam beatae dolores omnis.</p>
+    </div>
 </div>
+</section>
 
 <!--- End FA&Q Section -->
 
@@ -146,7 +164,7 @@
   <div class="container info-section">
     <div class="row g-4">
       <div class="col-md">
-        <h2 class="text-center mb-4">Contact Info</h2>
+        <h2 class="contact-info-section text-center mb-4">Contact Info</h2>
         <ul class="list-group list-group-flush lead" >
           <li class="list-group-item">
             <span class="fw-bold"><i class="fa fa-location-arrow"></i> Main Location: </span> Rue de Berrima, Marrakech 40000
@@ -162,7 +180,7 @@
         </ul>
       </div>
       <div class="col-md map-responsive">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12126509145!2d-8.07806405652092!3d31.634602239357168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafebed3b83e5e7%3A0x93cf34ce8ce75661!2sZephyr%20Marrakech%20-%20H%C3%B4tel%2C%20Centre%20de%20Vacances%2C%20Resort%20%26%20SPA!5e0!3m2!1sen!2sma!4v1653847760936!5m2!1sen!2sma" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.3364804807256!2d-8.01934364820714!3d31.62463634905638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafeeecf9c2fed5%3A0x2b842b56bd899196!2sMust%20Club%20Marrakech!5e0!3m2!1sen!2sma!4v1655063622394!5m2!1sen!2sma" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -176,7 +194,7 @@
 <div class="container my-5">
   <!-- Footer -->
   <footer class="text-center text-lg-start text-white" style="background-color: transparent">
-      <section class="mb-4 text-center">
+      <section class="mb-4 text-center social-media">
         <!-- Facebook -->
         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
 
@@ -199,7 +217,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"> © 2022 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Simbastyle</a>
+      <a class="text-white" href="#">CashMarrakech</a>
     </div>
     <!-- Copyright -->
   </footer>

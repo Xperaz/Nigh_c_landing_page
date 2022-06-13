@@ -1,29 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 body{
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   color: #fff;
-  background-image: url(/img/bg.jpg);
-  background-image: cover;
+  background-color: #181818;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; ;
 }
 
 .navbar {
   background: rgba(0, 0, 0, 0.9);
-}
+} 
 .navbar-brand img {
-  height: 2rem;
+  height: 3rem;
 }
 
-.video-background {
+.full-screen-video-container
+{
+  z-index: -1;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.full-screen-video-container video {
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .video-background {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.caption {
+/* .caption {
   position: absolute;
   top: 30%;
   width: 100%;
@@ -46,11 +72,11 @@ body{
   border-width: medium;
   font-size: 1.1rem;
   padding: .6rem 1.6rem;
-}
+} */ */
 
 @media (max-width: 768px) {
   .caption h1 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     letter-spacing: 0.2rem;
     padding-bottom: 0.3rem;
   }
@@ -85,7 +111,7 @@ body{
   text-align: center;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 
@@ -99,7 +125,7 @@ body{
 }
 
 .blockquote-footer {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .testimonials-header {
@@ -109,67 +135,70 @@ body{
 
 /* start F&Qs */
 
-.faq-container {
-  width: 40%;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.faq-container h1 {
+.faq-heading {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
   color: #FFD700;
-  position: relative;
-  width: 40rem;
-  margin-bottom: 50px;
 }
 
-.faq-container h1::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  right: 28px;
-  width: 115px;
-  height: 2px;
-  background-color: #FFD700;
+.questions-container{
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.faq-accordion {
+.question button{
   width: 100%;
-  padding: 10px 15px;
-  border: 2px solid #FFD700;
-  cursor: pointer;
-  border-radius: 50px;
+  background-color: transparent;
   display: flex;
-  margin: 20px 0;
+  justify-content: space-between;
   align-items: center;
-}
-
-.faq-accordion .icon{
-  margin: 0 10px 0 0;
-  width: 50px;
-  height: 50px;
-  background: url(/img/add.png);
-  float: left;
-  transition: all .5s ease-in;
-}
-
-.faq-accordion h5 {
+  padding: 20px 15px;
+  border:none;
+  outline: none;
   font-size: 22px;
-  margin: 0;
-  padding: 3px 0 0 0;
-  font-weight: normal;
-  color: #d2c36e;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.question p{
+  font-size: 22px;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color: #fff;
+}
+
+/*this class when click*/
+.question p.show{
+  max-height: 200px; 
+  opacity: 1;
+  padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+  transform: rotate(180deg);
 }
 
 /* END F&Qs */
 
 /*start contact info */
 .info-section {
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
+.contact-info-section {
+  color: #FFD700;
+}
+
 .list-group-item {
-  background-color: transparent;
-  border-top: 1px solid #FFD700;
+  background-color: transparent !important;
+  border-bottom: 1px solid #FFD700;
   border-radius: 0;
   color: #fff;
   }
@@ -180,7 +209,7 @@ footer {
   margin-top: -70px;
 }
 
-a:hover {
+.social-media a:hover {
   background-color: #FFD700 !important;
   outline: #FFD700 !important;
 }
