@@ -12,6 +12,7 @@ buttons.forEach( button =>{
     })
 } )
 
+/* Custom Video Dimension */
 function deferVideo() {
   $("video source").each(function() {
     var sourceFile = $(this).attr("data-src");
